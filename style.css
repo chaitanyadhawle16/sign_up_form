@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+body{
+    font-size: 0.7rem;
+    background-color: lightgray;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.pop-up{
+    font-size: 1.5rem;
+    color: gray;
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    animation-name: pop-animate;
+    animation-duration: 1s;
+}
+
+.pop-up-container{
+    display: none;
+    z-index: 1;
+}
+.container{
+
+    background-color: white;
+    padding: 2rem 1rem;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+}
+
+.container h2{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.form-content{
+    padding-bottom: 5px;
+    position: relative;
+}
+.form-content input{
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+    padding: 5px ;
+}
+
+.form-content i{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.form-content.success input{
+    border: 1.5px solid green;
+}
+
+.form-content.error input{
+    border: 1.5px solid red;
+}
+
+.form-content small{
+    color:red;
+    visibility: hidden;
+}
+
+
+.form-content.error small{
+    visibility: visible;
+}
+
+
+button{
+    width: 100%;
+    padding:10px;
+    color: white;
+    background-color: lightskyblue;
+    border: 2px solid lightskyblue;
+    border-radius: 8px;
+}
+
+@keyframes pop-animate {
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+    to{
+        top:40%;
+        opacity: 1;
+    }
+}
