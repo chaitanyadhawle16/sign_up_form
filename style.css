@@ -14,29 +14,6 @@ body{
     justify-content: center;
 }
 
-.pop-up{
-    font-size: 1.5rem;
-    color: gray;
-    background-color: white;
-    height: 100px;
-    width: 200px;
-    position: absolute;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px;
-    top: 40%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    display: flex;
-    align-items: center;
-    animation-name: pop-animate;
-    animation-duration: 1s;
-}
-
-.pop-up-container{
-    display: none;
-    z-index: 1;
-}
 .container{
 
     background-color: white;
