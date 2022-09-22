@@ -75,14 +75,3 @@ button{
     border: 2px solid lightskyblue;
     border-radius: 8px;
 }
-
-@keyframes pop-animate {
-    from{
-        top:-300px;
-        opacity: 0;
-    }
-    to{
-        top:40%;
-        opacity: 1;
-    }
-}
